@@ -13,8 +13,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
+import java.io.Serializable;
 
-public class NiftiVolume
+public class NiftiVolume implements Serializable
 {
     public NiftiHeader header;
     public FourDimensionalArray data;
